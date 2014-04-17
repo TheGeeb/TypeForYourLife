@@ -8,15 +8,15 @@
 <li>Glossary
 <hr>
 <h3><b>Introduction</b></h3>
-We are creating a rail-shooter game where you have to type words or sentences in order to kill the enemies. The levels will increase with difficulty and instead of words, the user will be required to type phrases and sentences.
+We are creating a typing-tutor type of game where you have to type words or sentences in order to survive an attack from the enemies. The levels will increase with difficulty, as the level increases, the words will be longer, eventually including phrases.
 <hr>
 <h3><b>Functional Requirements</b></h3>
 <li>Menu (start, options, quit)
-<li>Multiple Levels (different themes)
+<li>Multiple Levels (different levels of difficulty)
 <ul>
-<li>Different skins
+<li>
 </ul>
-<li>High score list
+<li>
 <li>Music/sounds
 <ul>
 <li>Taken from other games or free repositories
