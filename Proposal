@@ -1,0 +1,40 @@
+<html>
+<body>
+<h3><b>Index</b></h3>
+<li>Introduction
+<li>Functional Requirements
+<li>Non-Functional Requirements
+<li>System Evolution
+<li>Glossary
+<hr>
+<h3><b>Introduction</b></h3>
+We are creating a rail-shooter game where you have to type words or sentences in order to kill the enemies. The levels will increase with difficulty and instead of words, the user will be required to type phrases and sentences.
+<hr>
+<h3><b>Functional Requirements</b></h3>
+<li>Menu (start, options, quit)
+<li>Multiple Levels (different themes)
+<ul>
+<li>Different skins
+</ul>
+<li>High score list
+<li>Music/sounds
+<ul>
+<li>Taken from other games or free repositories
+</ul>
+<hr>
+<h3><b>Non-Functional Requirements</b></h3>
+<li>Not too cpu-heavy
+<li>Programmed in Java
+<ul>
+<li>Kept up to date with future versions
+</ul>
+<hr>
+<h3><b>System Evolution</b></h3>
+<li>Will support upcoming Java versions.
+<hr>
+<h3><b>Glossary</b></h3>
+<li>Rail-Shooter: In a rail shooter the player control is limited to directing where to fire a virtual gun or move their avatar around the screen; the player does not control the path their avatar takes from the start to the end. 
+
+<hr>
+</body>
+</html>
