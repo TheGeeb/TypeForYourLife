@@ -14,9 +14,9 @@ We are creating a typing-tutor type of game where you have to type words or sent
 <li>Menu (start, options, quit)
 <li>Multiple Levels (different levels of difficulty)
 <ul>
-<li>
+<li>As score gets higher, difficulty level increases
+<li>As difficulty level increases, more enemies are added
 </ul>
-<li>
 <li>Music/sounds
 <ul>
 <li>Taken from other games or free repositories
@@ -33,7 +33,7 @@ We are creating a typing-tutor type of game where you have to type words or sent
 <li>Will support upcoming Java versions.
 <hr>
 <h3><b>Glossary</b></h3>
-<li>Rail-Shooter: In a rail shooter the player control is limited to directing where to fire a virtual gun or move their avatar around the screen; the player does not control the path their avatar takes from the start to the end. 
+<li>Typing-Tutor: a game that helps the user learn to type while also providing entertainment, in this case, the user is typing to survive.
 
 <hr>
 </body>
