@@ -1,4 +1,2 @@
-SE103Game
+TypeForYourLife
 =========
-
-Typing Game
