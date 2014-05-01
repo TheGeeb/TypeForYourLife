@@ -1,0 +1,26 @@
+import java.awt.BorderLayout;
+import javax.swing.ImageIcon;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+public class Background extends JFrame
+{
+	private JLabel background;
+	
+	public Background()
+	{
+		setTitle("Type For Your Life");
+		setSize(400,400);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		setVisible(true);
+		
+		setLayout(new BorderLayout());
+		JLabel background=new JLabel(new ImageIcon("home/hi36/TypeForYourLife/xlarge_zombie_concept_003.jpg"));
+		add(background);
+	}
+	
+	public static void main(String args[])
+	{
+		new Background();
+	}
+}

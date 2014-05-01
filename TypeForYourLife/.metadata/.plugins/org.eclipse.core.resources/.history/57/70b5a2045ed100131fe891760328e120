@@ -1,0 +1,28 @@
+import java.awt.BorderLayout;
+import javax.swing.ImageIcon;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+public class MainMenuBackground extends JFrame
+{
+	private JLabel mMBackground;
+	
+	public MainMenuBackground()
+	{
+		setTitle("Type For Your Life");
+		setSize(640,360);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		setVisible(true);
+		
+		setLayout(new BorderLayout());
+		JLabel mMBackground=new JLabel(new ImageIcon("/home/hi36/TypeForYourLife/TypeForYourLife/MainMenuGUITest/xlarge_zombie_concept_003.jpg"));
+		add(mMBackground);
+		setLocationRelativeTo(null);
+		
+	}
+	
+	public static void main(String args[])
+	{
+		new MainMenuBackground();
+	}
+}

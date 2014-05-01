@@ -1,0 +1,23 @@
+import java.awt.BorderLayout;
+import javax.swing.ImageIcon;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+public class Background extends JFrame
+{
+	public Background()
+	{
+		setTitle("Background of the Main Menu");
+		setSize(400,400);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		setVisible(true);
+		
+		setLayout(new BorderLayout());
+		setContentPane(new JLabel(new ImageIcon("home/hi36/TypeForYourLife/xlarge_zombie_concept_003.jpg")));
+	}
+	
+	public static void main(String args[])
+	{
+		new Background();
+	}
+}
