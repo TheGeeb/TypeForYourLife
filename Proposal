@@ -8,14 +8,14 @@
 <li>Glossary
 <hr>
 <h3><b>Introduction</b></h3>
-We are creating a typing-tutor type of game where you have to type words or sentences in order to survive an attack from the enemies. The levels will increase with difficulty, as the level increases, the words will be longer, eventually including phrases.
+We are creating a typing-tutor game where you have to type words or sentences in order to survive an attack from the enemies. The levels will increase in difficulty. As the level increases, the words will be longer, eventually including phrases.
 <hr>
 <h3><b>Functional Requirements</b></h3>
 <li>Menu (start, options, quit)
 <li>Multiple Levels (different levels of difficulty)
 <ul>
 <li>As score gets higher, difficulty level increases
-<li>As difficulty level increases, more enemies are added
+<li>As difficulty level increases, bigger enemies are added
 </ul>
 <li>Music/sounds
 <ul>
