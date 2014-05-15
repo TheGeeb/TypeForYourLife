@@ -1,10 +1,12 @@
-import java.io.File;
-import java.io.IOException;
+
+import java.awt.BorderLayout;
+import java.awt.FlowLayout;
 import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
 
 import javax.swing.JFrame;
+import javax.swing.JPanel;
 import javax.swing.JTextField;
 
 
@@ -13,7 +15,9 @@ public class Levels extends JFrame
 	private Scanner input1;
 	private Scanner input2;
 	private Scanner input3;
-	private JTextField word;
+	private JTextField words;
+	private JTextField input;
+	private JPanel j;
 	ArrayList<String> levelOneWords = new ArrayList<String>();
 	ArrayList<String> levelTwoWords = new ArrayList<String>();
 	ArrayList<String> levelThreeWords = new ArrayList<String>();
@@ -21,119 +25,43 @@ public class Levels extends JFrame
 	
 	public Levels()
 	{
-		JTextField word = new JTextField();
-		word.setEditable(false);
+		setLayout(new FlowLayout());
 		
-		add(word);
+		
+		
+		words = new JTextField();
+		words.setEditable(false);
+	
+		input = new JTextField();
+		
+	
+
+		add(words);
+		add(input);
 	}
 	
 	
-	public void Level1File()
+	public void level(ArrayList<String> b)
 	{
-		try 
-		{
-			input1 = new Scanner(new File("level1.txt"));
-	    } 
-		catch (IOException e) 
-	    {
-			System.err.println("Error opening file.");		 
-		}
-		    
-	    
-		while (input1.hasNextLine())
-		{
-		        levelOneWords.add(input1.nextLine());
-		}
-	
-	    
-		if(input1 != null)
-	    	input1.close();
-	 }
-	
-	
-	public void levelOne()
-	{
-		Level1File();
+		RunGame.Level1File();
+		RunGame.Level2File();
+		RunGame.Level3File();
 		
 		Random random = new Random();
 		
-		int randomNum = random.nextInt(levelOneWords.size());
+		int num = random.nextInt(b.size());
+		System.out.print(b.get(num));
 		
-		//word.setText(levelOneWords.get(randomNum));
+		words.setText(b.get(num));
 		
-		System.out.print(levelOneWords.get(randomNum));
+		
+		
+	
 	}
-	
-	public void Level2File()
-	{
-		try 
-		{
-			input2 = new Scanner(new File("level2.txt"));
-	    } 
-		catch (IOException e) 
-	    {
-			System.err.println("Error opening file.");		 
-		}
-		    
-	    
-		while (input2.hasNextLine())
-		{
-		        levelTwoWords.add(input2.nextLine());
-		}
-	
-	    
-		if(input2 != null)
-	    	input2.close();
-	 }
-	
-	public void levelTwo()
-	{
-		Level2File();
-		
-		Random random = new Random();
-		
-		int randomNum = random.nextInt(levelTwoWords.size());
-		
-		System.out.print(levelTwoWords.get(randomNum));
-	}
-	
-	public void Level3File()
-	{
-		try 
-		{
-			input3 = new Scanner(new File("level3.txt"));
-	    } 
-		catch (IOException e) 
-	    {
-			System.err.println("Error opening file.");		 
-		}
-		    
-	    
-		while (input3.hasNextLine())
-		{
-		        levelThreeWords.add(input3.nextLine());
-		}
-	
-	    
-		if(input3 != null)
-	    	input3.close();
-	 }
-	
-	public void levelThree()
-	{
-		Level3File();
-		
-		Random random = new Random();
-		
-		int randomNum = random.nextInt(levelThreeWords.size());
-		
-		System.out.print(levelThreeWords.get(randomNum));
-	}
-	
-	
+
 	public boolean checkWord(ArrayList<String> a)
 	{
-		
+		return false;
 			
 		
 	}
