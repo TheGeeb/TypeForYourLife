@@ -4,16 +4,28 @@ import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
 
+import javax.swing.JFrame;
+import javax.swing.JTextField;
 
-public class Levels 
+
+public class Levels extends JFrame
 {
 	private Scanner input1;
 	private Scanner input2;
 	private Scanner input3;
+	private JTextField word;
 	ArrayList<String> levelOneWords = new ArrayList<String>();
 	ArrayList<String> levelTwoWords = new ArrayList<String>();
 	ArrayList<String> levelThreeWords = new ArrayList<String>();
 	
+	
+	public Levels()
+	{
+		JTextField word = new JTextField();
+		word.setEditable(false);
+		
+		add(word);
+	}
 	
 	
 	public void Level1File()
@@ -38,12 +50,91 @@ public class Levels
 	    	input1.close();
 	 }
 	
+	
 	public void levelOne()
 	{
+		Level1File();
+		
 		Random random = new Random();
 		
 		int randomNum = random.nextInt(levelOneWords.size());
 		
+		//word.setText(levelOneWords.get(randomNum));
+		
 		System.out.print(levelOneWords.get(randomNum));
+	}
+	
+	public void Level2File()
+	{
+		try 
+		{
+			input2 = new Scanner(new File("level2.txt"));
+	    } 
+		catch (IOException e) 
+	    {
+			System.err.println("Error opening file.");		 
+		}
+		    
+	    
+		while (input2.hasNextLine())
+		{
+		        levelTwoWords.add(input2.nextLine());
+		}
+	
+	    
+		if(input2 != null)
+	    	input2.close();
+	 }
+	
+	public void levelTwo()
+	{
+		Level2File();
+		
+		Random random = new Random();
+		
+		int randomNum = random.nextInt(levelTwoWords.size());
+		
+		System.out.print(levelTwoWords.get(randomNum));
+	}
+	
+	public void Level3File()
+	{
+		try 
+		{
+			input3 = new Scanner(new File("level3.txt"));
+	    } 
+		catch (IOException e) 
+	    {
+			System.err.println("Error opening file.");		 
+		}
+		    
+	    
+		while (input3.hasNextLine())
+		{
+		        levelThreeWords.add(input3.nextLine());
+		}
+	
+	    
+		if(input3 != null)
+	    	input3.close();
+	 }
+	
+	public void levelThree()
+	{
+		Level3File();
+		
+		Random random = new Random();
+		
+		int randomNum = random.nextInt(levelThreeWords.size());
+		
+		System.out.print(levelThreeWords.get(randomNum));
+	}
+	
+	
+	public boolean checkWord(ArrayList<String> a)
+	{
+		
+			
+		
 	}
 }

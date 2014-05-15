@@ -6,7 +6,10 @@ public class PlayGame
 	
 	public void play()
 	{
-		
+		while(score <=100)
+		{
+			
+		}
 	}
 	
 }
