@@ -109,7 +109,7 @@ public class RunGame
 		Level2File();
 		Level3File();
 		
-		l.level(levelOneWords);
+		
 		
 		
 		l.setSize(600,600);

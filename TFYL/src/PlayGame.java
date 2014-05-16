@@ -6,6 +6,14 @@ public class PlayGame
 	
 	public void play()
 	{
+		
+		RunGame.Level1File(); // read file
+		RunGame.Level2File(); // read file
+		RunGame.Level3File(); // read file
+		
+		
+		
+		
 		while(score <=100)
 		{
 			
