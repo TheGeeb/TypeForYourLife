@@ -38,7 +38,7 @@ public class Levels extends JFrame implements ActionListener
 		word = new JTextField();
 		word.setEditable(false);
 		word.setForeground(Color.RED);
-		word.setOpaque(false);
+		word.setOpaque(true);
 		
 		input = new JTextField();
 		input.setOpaque(false);
@@ -79,11 +79,12 @@ public class Levels extends JFrame implements ActionListener
 	public void setWord(ArrayList<String> b)
 	{
 		word.setText(b.get(random(b))); // show word to type in GUI
+		
 	}
 	
-	public boolean checkWord(ArrayList<String> c )
+	public boolean checkWord()
 	{
-		if(word.getText().equalsIgnoreCase(c.get(random(c))))
+		if(input.getText().equalsIgnoreCase(word.getText()))
 			return true;
 		else 
 			return false;
@@ -93,7 +94,7 @@ public class Levels extends JFrame implements ActionListener
 	@Override
 	public void actionPerformed(ActionEvent e) 
 	{
-		
+		checkWord();
 		
 	}
 

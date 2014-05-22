@@ -110,7 +110,9 @@ public class RunGame
 		Level3File();
 		
 		
-		
+
+		l.random(levelOneWords);
+		l.setWord(levelOneWords);
 		
 		l.setSize(600,600);
 		l.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
