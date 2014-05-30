@@ -39,6 +39,36 @@ public class RunGame
 	 }
 	
 	
+	public static ArrayList<String> getLevelOneWords() {
+		return levelOneWords;
+	}
+
+
+	public static void setLevelOneWords(ArrayList<String> levelOneWords) {
+		RunGame.levelOneWords = levelOneWords;
+	}
+
+
+	public static ArrayList<String> getLevelTwoWords() {
+		return levelTwoWords;
+	}
+
+
+	public static void setLevelTwoWords(ArrayList<String> levelTwoWords) {
+		RunGame.levelTwoWords = levelTwoWords;
+	}
+
+
+	public static ArrayList<String> getLevelThreeWords() {
+		return levelThreeWords;
+	}
+
+
+	public static void setLevelThreeWords(ArrayList<String> levelThreeWords) {
+		RunGame.levelThreeWords = levelThreeWords;
+	}
+
+
 	public void levelOne(ArrayList<String> b)
 	{
 		Level1File();
@@ -99,24 +129,20 @@ public class RunGame
 	    	input3.close();
 	 }
 	
-	public static void main(String[] args) 
+	public void play()
 	{
 		
-	
-		Levels l = new Levels();
 		
 		Level1File();
 		Level2File();
 		Level3File();
 		
 		
-
-		l.random(levelOneWords);
+		Levels l = new Levels();
+		l.setSize(1024,768);
 		l.setWord(levelOneWords);
 		
-		l.setSize(600,600);
-		l.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		l.setVisible(true);
+		
 		
 		
 	}

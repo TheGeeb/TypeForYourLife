@@ -1,11 +1,6 @@
-/App.class
-/MainFrame.class
-/Menu.class
-/ReadFiles.class
-/RunGame.class
-/PlayGame.class
-/MenuBackground.class
-/Menu$LabelListener.class
-/Levels.class
-/Timer.class
-/TFYL.png
+/LevelOneFrame.class
+/LevelThreeFrame.class
+/LevelTwoFrame.class
+/MainMenuFrame.class
+/CreditsFrame.class
+/GameOver.class
